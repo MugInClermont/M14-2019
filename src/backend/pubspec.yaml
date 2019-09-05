@@ -5,6 +5,7 @@ environment:
   sdk: '>=2.0.0-dev <3.0.0'
 homepage: https://github.com/angel-dart/angel
 dependencies:
+  angel_mongo: ^2.0.0
   angel_auth: ^2.0.0 # Supports stateless authentication via JWT
   angel_configuration: ^2.0.0 # Loads application configuration, along with support for .env files.
   angel_framework: ^2.0.0 # The core server library.

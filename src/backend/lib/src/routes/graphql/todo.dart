@@ -2,25 +2,25 @@ import 'package:backend/src/models/todo.dart';
 import 'package:angel_framework/angel_framework.dart';
 import 'package:angel_graphql/angel_graphql.dart';
 import 'package:graphql_schema/graphql_schema.dart';
+import 'package:angel_mongo/angel_mongo.dart';
+import 'package:mongo_dart/mongo_dart.dart'; 
 
 /// Find or create an in-memory Todo store.
-MapService _getTodoService(Angel app) {
+MongoService _getTodoService(Angel app) {
   const key = 'todoService';
 
   // If there is already an existing singleton, return it.
   if (app.container.hasNamed(key)) {
-    return app.container.findByName<MapService>(key);
+    return app.container.findByName<MongoService>(key);
   }
 
-  // Create an in-memory service. We will use this
-  // as the backend to store Todo objects, serialized to Maps.
-  var mapService = MapService();
 
-  // Register this service as a named singleton in the app container,
-  // so that we do not inadvertently create another instance.
-  app.container.registerNamedSingleton(key, mapService);
-
-  return mapService;
+  var db = new Db('mongodb://localhost:27017/local');
+  db.open();
+  var dbService = new MongoService(db.collection("Todos"));
+  app.container.registerNamedSingleton(key, dbService);
+  
+  return dbService;
 }
 
 /// Returns fields to be inserted into the query type.
