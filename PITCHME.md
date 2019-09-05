@@ -42,3 +42,17 @@ mutation
 Le backend en quelques chiffres
 1 merge-request
 ---
+
+
+
+
+++++
+vuejs 
+https://refi64.com/vuedart/
+---
+pub global activate vue_cli 
+vuedart create frontend 
+pub get
+---
+pub global activate webdev 
+webdev serve

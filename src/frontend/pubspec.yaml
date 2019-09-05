@@ -1,0 +1,13 @@
+name: frontend
+author: the author
+version: 0.1.0
+description: Project description goes here
+dependencies:
+  vue: 
+    git:
+      url: https://github.com/refi64/vuedart.git
+      path: vue
+      ref: v0.4
+dev_dependencies:
+  build_runner: any
+  build_web_compilers: any
