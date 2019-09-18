@@ -1,18 +1,17 @@
 import 'package:angel_framework/angel_framework.dart';
 import 'package:graphql_schema/graphql_schema.dart';
-import 'todo.dart';
+import 'event.dart';
 
-/// Creates a GraphQL schema that manages an in-memory store of
-/// Todo items.
-GraphQLSchema createSchema(Angel app) {
+
+GraphQLSchema createEventSchema(Angel app) {
   var queryType = objectType(
-    'TodoQuery',
-    fields: todoQueryFields(app),
+    'EventQuery',
+    fields: eventQueryFields(app),
   );
 
   var mutationType = objectType(
-    'TodoMutation',
-    fields: todoMutationFields(app),
+    'EventMutation',
+    fields: eventMutationFields(app),
   );
 
   return graphQLSchema(

@@ -4,7 +4,7 @@ import 'package:angel_framework/angel_framework.dart';
 import 'package:angel_static/angel_static.dart';
 import 'package:file/file.dart';
 import 'controllers/controllers.dart' as controllers;
-import 'graphql/graphql.dart' as graphql;
+import 'Events/eventcontroller.dart' as events;
 
 /// Put your app routes here!
 ///
@@ -17,7 +17,7 @@ AngelConfigurer configureServer(FileSystem fileSystem) {
     await app.configure(controllers.configureServer);
 
     // Mount our GraphQL routes as well.
-    await app.configure(graphql.configureServer);
+    await app.configure(events.configureServer);
 
     // Render `views/hello.jl` when a user visits the application root.
     app.get('/', (req, res) => res.render('hello'));
