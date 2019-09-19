@@ -3,7 +3,7 @@ import 'package:angel_framework/angel_framework.dart';
 import 'package:angel_graphql/angel_graphql.dart';
 import 'package:graphql_schema/graphql_schema.dart';
 import 'package:angel_mongo/angel_mongo.dart';
-import 'package:mongo_dart/mongo_dart.dart'; 
+import 'package:mongo_dart/mongo_dart.dart';
 
 MongoService _getEventService(Angel app) {
   const key = 'eventService';
@@ -18,7 +18,6 @@ MongoService _getEventService(Angel app) {
   db.open();
   var dbService = MongoService(db.collection("Events"));
   app.container.registerNamedSingleton(key, dbService);
-  
   return dbService;
 }
 

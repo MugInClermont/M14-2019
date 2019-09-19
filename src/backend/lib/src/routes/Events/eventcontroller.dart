@@ -9,7 +9,7 @@ void configureServer(Angel app) async {
   var graphQL = GraphQL(schema);
 
   // Mount a handler that responds to GraphQL queries.
-  app.all('/events', graphQLHttp(graphQL));
+  app.all('/graphql', graphQLHttp(graphQL));
 
   // In development, serve the GraphiQL IDE/editor.
   // More info: https://github.com/graphql/graphiql

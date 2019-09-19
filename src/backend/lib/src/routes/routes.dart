@@ -4,7 +4,7 @@ import 'package:angel_framework/angel_framework.dart';
 import 'package:angel_static/angel_static.dart';
 import 'package:file/file.dart';
 import 'controllers/controllers.dart' as controllers;
-import 'Events/eventcontroller.dart' as events;
+import 'events/eventcontroller.dart' as events;
 
 /// Put your app routes here!
 ///
