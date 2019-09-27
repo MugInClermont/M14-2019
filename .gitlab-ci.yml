@@ -4,17 +4,10 @@ deploy_production:
   stage: deploy
   environment: Production
   only:
-  - master
-  script:
-  - echo $SERVICE_ACCOUNT > /tmp/$CI_PIPELINE_ID.json
-  - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
-  - gcloud --quiet --project $PROJECT_ID app deploy src/backend/app.yaml
-
-deploy_staging:
-  stage: deploy
-  environment: Staging
-  only:
-  - staging
+    refs:
+     - master
+    changes:
+     - src/backend/*
   script:
   - echo $SERVICE_ACCOUNT > /tmp/$CI_PIPELINE_ID.json
   - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
