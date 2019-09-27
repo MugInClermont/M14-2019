@@ -17,6 +17,7 @@ MongoService _getEventService(Angel app) {
   var db = Db('mongodb://localhost:27017/local');
   db.open();
   var dbService = MongoService(db.collection("Events"));
+
   app.container.registerNamedSingleton(key, dbService);
   return dbService;
 }
