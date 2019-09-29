@@ -5,12 +5,12 @@ import 'package:graphql_schema/graphql_schema.dart';
 import 'package:angel_mongo/angel_mongo.dart';
 import 'package:mongo_dart/mongo_dart.dart';
 
-MongoService _getEventService(Angel app) {
+HookedService _getEventService(Angel app) {
   const key = 'eventService';
 
   // If there is already an existing singleton, return it.
   if (app.container.hasNamed(key)) {
-    return app.container.findByName<MongoService>(key);
+    return app.container.findByName<HookedService>(key);
   }
 
 
@@ -18,8 +18,10 @@ MongoService _getEventService(Angel app) {
   var db = Db(mongoIp);
   db.open();
   var dbService = MongoService(db.collection("Events"));
-  app.container.registerNamedSingleton(key, dbService);
-  return dbService;
+  var service = new HookedService(dbService);
+
+  app.container.registerNamedSingleton(key, service);
+  return service;
 }
 
 /// Returns fields to be inserted into the query type.

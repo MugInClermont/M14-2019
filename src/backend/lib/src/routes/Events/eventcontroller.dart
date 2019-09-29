@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:angel_framework/angel_framework.dart';
 import 'package:angel_graphql/angel_graphql.dart';
+import 'package:angel_mongo/angel_mongo.dart';
 import 'package:graphql_server/graphql_server.dart';
 import 'eventschema.dart';
 import "package:angel_websocket/server.dart";
@@ -20,6 +21,11 @@ class EventsController extends WebSocketController {
    var schema = createEventSchema(app);
    var graphQL = GraphQL(schema);
 
+   var dbService = app.container.findByName<HookedService>("eventService");
+
+   //dbService.afterAll(publish);
+   dbService.afterCreated.listen(publish);
+   dbService.afterUpdated.listen(publish);
    // Mount a handler that responds to GraphQL queries.
    app.all('/eventsGraph', graphQLHttp(graphQL));
 
@@ -30,20 +36,14 @@ class EventsController extends WebSocketController {
    }
  }
 
-  @Expose("/")
+ FutureOr publish(HookedServiceEvent e) async {
+   this.broadcast("events", e.data);
+ }
+
+  /*@Expose("/")
   Future getIndex(ResponseContext res) async {
-    this.broadcast("test", {"menu": {
-      "id": "file",
-      "value": "File",
-      "popup": {
-        "menuitem": [
-          {"value": "New", "onclick": "CreateNewDoc()"},
-          {"value": "Open", "onclick": "OpenDoc()"},
-          {"value": "Close", "onclick": "CloseDoc()"}
-        ]
-      }
-    }});
-  }
+    t
+  }*/
 
 
 
