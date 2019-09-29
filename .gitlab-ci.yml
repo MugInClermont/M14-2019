@@ -1,8 +1,5 @@
 image: google/cloud-sdk:alpine
 
-stages:
-  - configure
-  - deploy
   
 configure_backend: 
   stage: configure
@@ -14,10 +11,6 @@ configure_backend:
      - src/backend/*
   script:
   - echo Setting MongoDb adress $MONGODB_IP
-  - sed -i  "s/localhost:27017/$MONGODB_IP:27017/" src/backend/config/default.yaml
-  - cat src/backend/config/default.yaml
-  - sed -i  "s/3000/443/" src/backend/config/default.yaml
-  - cat src/backend/config/default.yaml
   
 deploy_backend:
   stage: deploy
@@ -28,6 +21,8 @@ deploy_backend:
     changes:
      - src/backend/*
   script:
+  - sed -i  "s/localhost:27017/$MONGODB_IP:27017/" src/backend/config/default.yaml
+  - sed -i  "s/3000/443/" src/backend/config/default.yaml
   - echo $SERVICE_ACCOUNT > /tmp/$CI_PIPELINE_ID.json
   - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
   - rm /tmp/$CI_PIPELINE_ID.json
