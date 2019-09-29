@@ -11,7 +11,6 @@ deploy_backend:
      - src/backend/*
   script:
   - sed -i  "s/localhost:27017/$MONGODB_IP:27017/" src/backend/config/default.yaml
-  - sed -i  "s/3000/443/" src/backend/config/default.yaml
   - echo $SERVICE_ACCOUNT > /tmp/$CI_PIPELINE_ID.json
   - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
   - rm /tmp/$CI_PIPELINE_ID.json
