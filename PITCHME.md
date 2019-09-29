@@ -43,8 +43,10 @@ Le backend en quelques chiffres
 1 merge-request
 ---
 
-
-
+---
+generate models
+pub run build_runner build
+---
 
 ++++
 vuejs 

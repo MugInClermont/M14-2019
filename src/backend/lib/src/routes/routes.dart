@@ -2,11 +2,11 @@ library backend.src.routes;
 
 import 'package:angel_framework/angel_framework.dart';
 import 'package:angel_static/angel_static.dart';
-import 'package:backend/src/services/requesthandler.dart' as prefix0;
 import 'package:file/file.dart';
 import 'Events/eventcontroller.dart';
-import "package:angel_framework/angel_framework.dart";
 import "package:angel_websocket/server.dart";
+
+import 'Topics/topicscontroller.dart';
 
 /// Put your app routes here!
 ///
@@ -30,6 +30,8 @@ AngelConfigurer configureServer(FileSystem fileSystem) {
 
     // Mount our GraphQL routes as well.
     await app.configure(new EventsController(ws).configureServer);
+
+    await app.configure(new TopicsController(ws).configureServer);
     // Mount static server at web in development.
     // The `CachingVirtualDirectory` variant of `VirtualDirectory` also sends `Cache-Control` headers.
     //
