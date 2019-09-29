@@ -1,7 +1,11 @@
 image: google/cloud-sdk:alpine
 
+stages:
+  - configure
+  - deploy
+  
 configure_backend: 
-  stage: deploy
+  stage: configure
   environment: Production
   only:
     refs:
