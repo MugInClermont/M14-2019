@@ -28,6 +28,8 @@ deploy_backend:
   - echo $SERVICE_ACCOUNT > /tmp/$CI_PIPELINE_ID.json
   - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
   - gcloud --quiet --project $PROJECT_ID app deploy src/backend/app.yaml
+  after_script:
+  - rm /tmp/$CI_PIPELINE_ID.json
 
 deploy_frontend:
   stage: deploy
@@ -41,7 +43,5 @@ deploy_frontend:
   - echo $SERVICE_ACCOUNT_frontend > /tmp/$CI_PIPELINE_ID.json
   - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
   - gcloud --quiet --project $PROJECT_ID app deploy src/frontend/app.yaml
-
-
-after_script:
-- rm /tmp/$CI_PIPELINE_ID.json
+  after_script:
+  - rm /tmp/$CI_PIPELINE_ID.json
