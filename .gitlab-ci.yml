@@ -1,17 +1,6 @@
 image: google/cloud-sdk:alpine
 
   
-configure_backend: 
-  stage: configure
-  environment: Production
-  only:
-    refs:
-     - master
-    changes:
-     - src/backend/*
-  script:
-  - echo Setting MongoDb adress $MONGODB_IP
-  
 deploy_backend:
   stage: deploy
   environment: Production
