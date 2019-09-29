@@ -15,6 +15,9 @@ configure_backend:
   script:
   - echo Setting MongoDb adress $MONGODB_IP
   - sed -i  "s/localhost:27017/$MONGODB_IP:27017/" src/backend/config/default.yaml
+  - cat src/backend/config/default.yaml
+  - sed -i  "s/port: 3000/port: 443/" src/backend/config/default.yaml
+  - cat src/backend/config/default.yaml
   
 deploy_backend:
   stage: deploy
