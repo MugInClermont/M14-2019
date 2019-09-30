@@ -1,5 +1,5 @@
 FROM nginx:latest
-
+ 
 # Copy web site
 COPY ./build/web/ /usr/share/nginx/html
 
