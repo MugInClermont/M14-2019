@@ -56,3 +56,15 @@ pub get
 ---
 pub global activate webdev 
 webdev serve
+---
+
+
++++
+GCP 
+---
+Creation d'un projet dans GCP
+....
+And python
+---
+Installation du google cloud SDK
+---
