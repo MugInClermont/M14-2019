@@ -43,8 +43,10 @@ Le backend en quelques chiffres
 1 merge-request
 ---
 
-
-
+---
+generate models
+pub run build_runner build
+---
 
 ++++
 vuejs 
@@ -56,6 +58,7 @@ pub get
 ---
 pub global activate webdev 
 webdev serve
+<<<<<<< HEAD
 ---
 
 
@@ -68,3 +71,5 @@ And python
 ---
 Installation du google cloud SDK
 ---
+=======
+>>>>>>> 0242f80321d13b5213d2034e96971852ef2efe18
