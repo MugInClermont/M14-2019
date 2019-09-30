@@ -4,3 +4,5 @@ service: default
 network:
   forwarded_ports:
     - 3000/tcp
+readiness_check:
+  app_start_timeout_sec: 300
