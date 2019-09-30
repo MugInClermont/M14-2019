@@ -1,5 +1,4 @@
 
-
   
 deploy_backend:
   image: google/cloud-sdk:alpine
@@ -30,7 +29,8 @@ build_frontend:
   - cd src/frontend
   - flutter build web
   artifacts:
-    paths: $CI_PROJECT_DIR/build/web 
+    paths:
+      - $CI_PROJECT_DIR/build/web 
   
 deploy_frontend:
   image: google/cloud-sdk:alpine
