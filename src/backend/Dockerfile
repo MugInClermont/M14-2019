@@ -1,4 +1,4 @@
-FROM google/dart:2.0
+FROM google/dart:2.4.1
 
 COPY ./ ./
 
@@ -10,5 +10,5 @@ RUN pub get
 
 # Set environment, start server
 ENV ANGEL_ENV=production
-EXPOSE 3000
+EXPOSE 80
 CMD dart bin/prod.dart
