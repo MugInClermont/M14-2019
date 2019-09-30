@@ -2,7 +2,7 @@
     <block name="content">
         <div class="title">Angel</div>
         <p>
-            <a href="/events">Click here</a> to access GraphiQL.
+            <a href="/topicsGraphi">Click here</a> to access GraphiQL.
         </p>
     </block>
 </extend>

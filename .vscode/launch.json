@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Dart",
-            "program": "bin/main.dart",
+            "program": "dart.bat --observe backend//bin//dev.dart",
             "request": "launch",
             "type": "dart"
         }
