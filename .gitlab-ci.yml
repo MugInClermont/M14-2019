@@ -1,7 +1,8 @@
-image: google/cloud-sdk:alpine
+
 
   
 deploy_backend:
+  image: google/cloud-sdk:alpine
   stage: deploy
   environment: Production
   only:
@@ -16,7 +17,23 @@ deploy_backend:
   - rm /tmp/$CI_PIPELINE_ID.json
   - gcloud --quiet --project $PROJECT_ID app deploy src/backend/app.yaml
 
+build_frontend:
+  image: cirrusci/flutter
+  stage: build
+  environment: Production
+  only:
+    refs:
+     - master
+    changes:
+     - src/frontend/*
+  script:
+  - cd src/frontend
+  - flutter build web
+  artifacts:
+    paths: $CI_PROJECT_DIR/build/web 
+  
 deploy_frontend:
+  image: google/cloud-sdk:alpine
   stage: deploy
   environment: Production
   only:
