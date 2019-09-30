@@ -1,3 +1,6 @@
 runtime: custom
 env: flex
 service: default
+network:
+  forwarded_ports:
+    - 3000/tcp
