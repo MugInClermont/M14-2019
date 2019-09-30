@@ -25,7 +25,7 @@ deploy_frontend:
     changes:
      - src/frontend/*
   script:
-  - echo $SERVICE_ACCOUNT_frontend > /tmp/$CI_PIPELINE_ID.json
+  - echo $SERVICE_ACCOUNT_FRONT > /tmp/$CI_PIPELINE_ID.json
   - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
   - rm /tmp/$CI_PIPELINE_ID.json
-  - gcloud --quiet --project $PROJECT_ID app deploy src/frontend/app.yaml
+  - gcloud --quiet --project $PROJECT_ID_FRONT app deploy src/frontend/app.yaml
