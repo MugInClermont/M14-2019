@@ -10,5 +10,5 @@ RUN pub get
 
 # Set environment, start server
 ENV ANGEL_ENV=production
-EXPOSE 3000
+EXPOSE 80
 CMD dart bin/prod.dart
