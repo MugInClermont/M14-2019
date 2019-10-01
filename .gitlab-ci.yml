@@ -13,7 +13,7 @@ deploy_backend:
   - echo $SERVICE_ACCOUNT > /tmp/$CI_PIPELINE_ID.json
   - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
   - rm /tmp/$CI_PIPELINE_ID.json
-  - gcloud --quiet --project $PROJECT_ID app deploy src/backend/app.yaml
+  - gcloud --quiet --project $PROJECT_ID app deploy src/backend/app.yaml --stop-previous-version
 
 build_frontend:
   image: cirrusci/flutter
@@ -45,4 +45,4 @@ deploy_frontend:
   - echo $SERVICE_ACCOUNT_FRONT > /tmp/$CI_PIPELINE_ID.json
   - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
   - rm /tmp/$CI_PIPELINE_ID.json
-  - gcloud --quiet --project $PROJECT_ID_FRONT app deploy src/frontend/app.yaml
+  - gcloud --quiet --project $PROJECT_ID_FRONT app deploy src/frontend/app.yaml --stop-previous-version

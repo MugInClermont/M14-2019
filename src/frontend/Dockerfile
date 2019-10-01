@@ -1,7 +1,8 @@
 FROM nginx:latest
  
+
 # Copy web site
-COPY ./src/frontend/build/web  /usr/share/nginx/html
+COPY /src/frontend/build/web  /usr/share/nginx/html
 
 # Define working directory.
 WORKDIR /etc/nginx
