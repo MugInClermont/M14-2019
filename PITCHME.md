@@ -33,7 +33,7 @@ GraphQL un de langage de requetage d'API
 
 +++?image=assets/graphQL.png&size=60%
 
-+++?image=assets/graphqlvsrest.png&size=60%
++++?image=assets/graphqlvsrest.png&size=80%
 
 +++
 
