@@ -1,4 +1,4 @@
-## Dev without MS ? 
+## Dev sans MS ? 
 
 ---
 ## Backend
@@ -29,11 +29,11 @@ MongoDB est une base de données orienté documents et open source
 
 ## Qu'est ce que GraphQL ? 
 
-GraphQL un langage de requetage d'API
+GraphQL un de langage de requetage d'API
 
 +++?image=assets/graphQL.png&size=60%
 
-+++?image=assets/graphqlvsrest.png
++++?image=assets/graphqlvsrest.png&size=80%
 
 +++
 
@@ -41,8 +41,19 @@ GraphQL un langage de requetage d'API
 
 +++
 
+## Les chiffres 
 
+ - 1 pull request  
+ - 50 bières 
+ - 100 tentavtives de déploiement sur Google App Engine
 
+## Enseignement 
+
+- Attention au framework jeune 
+- Difficulté d'avoir une stack complètement nouvelle 
+- GraphQl c'est cool 
+- faire des pub get et prévoir un bon forfait 
+- WebSocket 
 
 ---
 
