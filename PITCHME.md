@@ -17,7 +17,10 @@ un langage moderne (v1 en 2011)
 
 ## Pourquoi Angel ? 
 
-Angel est un framework backend écrit en dart
+- une idée folle 
+- Angel est un framework backend écrit en dart
+- queldues commit dont un du MUG ! 
+- 1 seul contributeur 
 
 +++
 
@@ -46,6 +49,8 @@ GraphQL un de langage de requetage d'API
  - 1 pull request  
  - 50 bières 
  - 100 tentavtives de déploiement sur Google App Engine
+  
++++
 
 ## Enseignement 
 
