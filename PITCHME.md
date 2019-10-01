@@ -19,14 +19,14 @@ un langage moderne (v1 en 2011)
 
 - une idée folle 
 - Angel est un framework backend écrit en dart
-- queldues commit dont un du MUG ! 
+- quelques commit dont un du MUG ! 
 - 1 seul contributeur 
 
 +++
 
 ## Pourquoi MongoDB ? 
 
-MongoDB est une base de données orienté documents et open source
+MongoDB est une base de données orientée documents et open source
 
 +++
 
@@ -48,7 +48,7 @@ GraphQL un de langage de requetage d'API
 
  - 1 pull request  
  - 50 bières 
- - 100 tentavtives de déploiement sur Google App Engine
+ - 100 tentatives de déploiement sur Google App Engine
   
 +++
 
@@ -56,7 +56,7 @@ GraphQL un de langage de requetage d'API
 
 - Attention au framework jeune 
 - Difficulté d'avoir une stack complètement nouvelle 
-- GraphQl c'est cool 
+- GraphQL c'est cool 
 - faire des pub get et prévoir un bon forfait 
 - WebSocket 
 
@@ -68,10 +68,6 @@ GraphQL un de langage de requetage d'API
 - Amazon Elastic Kubernetes Service (aka: Amazon EKS) |
 - Alibaba Container Services for Kubernetes (aka: CSK) |
 - Azure Kubernetes Service (aka: AKS) | 
-
----
-
-<img src="assets/Unitag_QRCode_1537289038135.png" class="qr_code">
 
 --- 
 
@@ -101,7 +97,7 @@ Disponible depuis le 23 Septembre
 +++
 
 ## Visual Studio 2019
-* 16.3 requis poir .Net Core 3.0
+* 16.3 requis pour .Net Core 3.0
 * Visual Studio for Mac 8.3
 +++
 
@@ -178,3 +174,4 @@ November 13–14, 2019
 https://www.microsoft.com/fr-fr/ignite-the-tour/paris
 
 +++
+FIN
