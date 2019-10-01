@@ -6,7 +6,9 @@ install dart
 ---
 install angel
 ---
+pub global activate angel_cli
 angel init backend
+choose graphQL project
 ---
 run angel
 dart --observe backend\bin\dev.dart
@@ -15,6 +17,7 @@ pub.bat get
 ---
 dependencies:
   angel_mongo: ^2.0.0
+  angel_websocket: ^2.0.0
 ---
 import 'package:angel_mongo/angel_mongo.dart';
 import 'package:mongo_dart/mongo_dart.dart'; 

@@ -5,7 +5,16 @@
     <span> of containers</span>
 </span> 
 
+
 ---
+## Why dart ? 
+
+modern language 
+
+---
+## The technical stack  ? 
+
+---?image=assets/archi.png
 
 ## Why a MUG?
 
