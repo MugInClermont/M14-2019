@@ -1,0 +1,7 @@
+logo: assets/MUG_Logo.png
+theme: sky
+theme-override : pitch.css
+background-size: cover
+charts: true
+published : true
+footnote : "© Mug In Clermont - 2018"
