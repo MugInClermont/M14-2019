@@ -41,8 +41,18 @@ GraphQL un de langage de requetage d'API
 
 +++
 
+## Les chiffres 
 
+ - 1 pull request  
+ - 50 bières 
+ - 100 tentavtives de déploiement sur Google App Engine
 
+## Enseignement 
+
+- Attention au framework jeune 
+- Difficulté d'avoir une stack complètement nouvelle 
+- GraphQl c'est cool 
+- faire des pub get et prévoir un bon forfait 
 
 ---
 
