@@ -36,27 +36,7 @@ MongoDB is a document-oriented database.
 
 GraphQL is a query language for APIs
 
-{
-  hero {
-    name
-    friends {
-      name
-      homeWorld {
-        name
-        climate
-      }
-      species {
-        name
-        lifespan
-        origin {
-          name
-        }
-      }
-    }
-  }
-}
-
-+++
++++?image=assets/graphQL.png&size=60%
 
 ### And the Cloud? 
 
