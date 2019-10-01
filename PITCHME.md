@@ -62,15 +62,6 @@ GraphQL un de langage de requetage d'API
 
 ---
 
-### And the Cloud? 
-
-- Docker Cloud |
-- Amazon Elastic Kubernetes Service (aka: Amazon EKS) |
-- Alibaba Container Services for Kubernetes (aka: CSK) |
-- Azure Kubernetes Service (aka: AKS) | 
-
---- 
-
 ## Et pendant ce temps chez MS ...
 
 +++
