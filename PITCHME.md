@@ -4,7 +4,16 @@
     <span>Bienvenue au XUG</span>   
 </span> 
 
+
 ---
+## Why dart ? 
+
+modern language 
+
+---
+## The technical stack  ? 
+
+---?image=assets/archi.png&size=60%
 
 ## Why a MUG?
 
