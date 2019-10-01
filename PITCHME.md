@@ -29,11 +29,11 @@ MongoDB est une base de données orienté documents et open source
 
 ## Qu'est ce que GraphQL ? 
 
-GraphQL un langage de requetage d'API
+GraphQL un de langage de requetage d'API
 
 +++?image=assets/graphQL.png&size=60%
 
-+++?image=assets/graphqlvsrest.png
++++?image=assets/graphqlvsrest.png&size=60%
 
 +++
 
