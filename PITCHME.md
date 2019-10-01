@@ -1,4 +1,4 @@
-## Dev without MS ? 
+## Dev sans MS ? 
 
 ---
 ## Backend
