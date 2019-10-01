@@ -53,6 +53,7 @@ GraphQL un de langage de requetage d'API
 - Difficulté d'avoir une stack complètement nouvelle 
 - GraphQl c'est cool 
 - faire des pub get et prévoir un bon forfait 
+- WebSocket 
 
 ---
 
