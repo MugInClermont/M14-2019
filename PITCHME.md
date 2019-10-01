@@ -9,11 +9,6 @@
 modern language 
 
 +++
-## Why dart ? 
-
-modern language 
-
-+++
 ## The technical stack  ? 
 
 +++?image=assets/archi.png&size=60%
@@ -37,6 +32,8 @@ MongoDB is a document-oriented database.
 GraphQL is a query language for APIs
 
 +++?image=assets/graphQL.png&size=60%
+
+---
 
 ### And the Cloud? 
 
