@@ -1,8 +1,7 @@
 ---?image=assets/container-3118783_960_720.jpg
 
 <span class="primary-title">
-    <span>A Story </span>   
-    <span> of containers</span>
+    <span>Bienvenue au XUG</span>   
 </span> 
 
 ---
