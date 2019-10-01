@@ -392,15 +392,46 @@ Disponible depuis le 23 Septembre
 ## Visual Studio 2019
 16.3 requis poir .Net Core 3.0
 
-## C# 8
+## C# 8 - Les types références Nullables
+Par défaut les types seront Non-Nullable
+````
+string s = null; // Warning: Assignment of null to non-nullable reference type
+````
 
-blabla
+````
+string? s = null; // Ok
+````
 
++++
+
+## C# 8 - Flux asynchrone
+
+````
+async IAsyncEnumerable<int> GetBigResultsAsync() 
+{ 
+    await foreach (var result in GetResultsAsync()) 
+    { 
+        if (result > 20) yield return result;  
+    } 
+}
+````
++++
+
+## C# 8 - Les types Range et Index
+
+````
+Index i1 = 3;  // number 3 from beginning 
+Index i2 = ^4; // number 4 from end 
+int[] a = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }; 
+Console.WriteLine($"{a[i1]}, {a[i2]}"); // "3, 6"
+````
+````
+var slice = a[i1..i2]; // { 3, 4, 5 }
+````
 +++
 
 ## ASP.Net Core 3.0
 
-blabla
 
 +++
 
@@ -413,6 +444,18 @@ blabla
 ## WPF et .Net Core
 
 blabla
+
++++
+
+## Xamarin
+
+blabla Hot Reload
+
++++
+
+## Model Builder pour ML.Net
+
+blabla 
 
 +++
 
