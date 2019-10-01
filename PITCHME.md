@@ -14,7 +14,7 @@ modern language
 ---
 ## The technical stack  ? 
 
----?image=assets/archi.png
+---?image=assets/archi.png&size=60%
 
 ## Why a MUG?
 
