@@ -4,34 +4,45 @@
 ## Backend
 
 +++
-## Why dart ? 
+## Pourquoi dart ? 
 
-modern language 
+un langage moderne (v1 en 2011)
 
 +++
-## The technical stack  ? 
+## La stack technique ? 
 
 +++?image=assets/archi.png&size=60%
 
 +++
 
-## What is Angel ? 
+## Pourquoi Angel ? 
 
-Is backend framework in Dart
-
-+++
-
-## What is MongoDB ? 
-
-MongoDB is a document-oriented database.
+Angel est un framework backend écrit en dart
 
 +++
 
-## What is GraphQL ? 
+## Pourquoi MongoDB ? 
 
-GraphQL is a query language for APIs
+MongoDB est une base de données orienté documents et open source
+
++++
+
+## Qu'est ce que GraphQL ? 
+
+GraphQL un langage de requetage d'API
 
 +++?image=assets/graphQL.png&size=60%
+
++++?image=assets/graphqlvsrest.png
+
++++
+
+## Demo
+
++++
+
+
+
 
 ---
 
