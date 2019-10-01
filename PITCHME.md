@@ -1,14 +1,22 @@
-## Dev sans MS ? 
+## Que faire sans MS ? 
+
+(et ben du dart)
 
 ---
+## Pourquoi dart ? 
+
+Un langage moderne (v1 en 2011).
+
+Développé par Google
+
+Possibilité de transcompiler en Javascript (dart2js)
+
++++
+
 ## Backend
 
 +++
-## Pourquoi dart ? 
 
-un langage moderne (v1 en 2011)
-
-+++
 ## La stack technique ? 
 
 +++?image=assets/archi.png&size=60%
@@ -57,7 +65,54 @@ GraphQL un de langage de requetage d'API
 
 ---
 
-### And the Cloud? 
+## Les frontaux
+
+Flutter
+
++++
+
+## En 1 mot
+
+##### Fuchsia 
+###### (ok pas que mais ça fait hype du futur)
+
++++
+
+## Et sinon c'est quoi ?
+
+Framework créé par Google.
+
+Open source
+
+Basé sur Dart
+
+1.0 en Décembre 2018
+
++++
+
+## Mais encore ?
+
+Permet de développer des applications Android / iOS **natives**
+
+Du web en preview
+
+Similarité avec React (sans JSX) (super...)
+
++++
+
+## Des widgets, des widgets, des widgets
+
+L'UI se déclare dans le code.
+
+"Tout" est un widget.
+
++++
+
+## Mieux que des mots, démo
+
+---
+
+## And the Cloud? 
 
 - Docker Cloud |
 - Amazon Elastic Kubernetes Service (aka: Amazon EKS) |
