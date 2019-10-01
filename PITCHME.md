@@ -134,7 +134,7 @@ var slice = a[i1..i2]; // { 3, 4, 5 }
 
 ## gRPC
 
-gRPC est disponible ()
+gRPC est disponible !
 
 * Performant
 * approche contract First
