@@ -55,12 +55,6 @@ GraphQL un de langage de requetage d'API
 
 ---
 
-## Question?
-
-Note: 15 min
-
----
-
 <img src="assets/Unitag_QRCode_1537289038135.png" class="qr_code">
 
 --- 
@@ -72,7 +66,9 @@ Note: 15 min
 ## .Net Conf
 
 https://www.dotnetconf.net/
+
 75 live sessions
+
 https://www.youtube.com/watch?v=MetcuX1OHD0&list=PLReL099Y5nRd04p81Q7p5TtyjCrj9tz1t
 
 +++
@@ -89,7 +85,9 @@ Disponible depuis le 23 Septembre
 +++
 
 ## Visual Studio 2019
-16.3 requis poir .Net Core 3.0
+* 16.3 requis poir .Net Core 3.0
+* Visual Studio for Mac 8.3
++++
 
 ## C# 8 - Les types références Nullables
 Par défaut les types seront Non-Nullable
@@ -134,28 +132,29 @@ var slice = a[i1..i2]; // { 3, 4, 5 }
 
 +++
 
-## WPF et .Net Core
+## gRPC
 
-blabla
+gRPC est disponible ()
+
+* Performant
+* approche contract First
+* compatible avec de nombreux langages
+* streaming
 
 +++
 
 ## WPF et .Net Core
 
-blabla
+Support de Winforms et WPF !!
 
 +++
 
 ## Xamarin
-
-blabla Hot Reload
+XAML Hot Reload for Xamarin.Forms
 
 +++
-
 ## Model Builder pour ML.Net
-
-blabla 
-
+Designer graphique dans Visual studio pour définir les modèles et les entrainer
 +++
 
 ## Microsoft Ignite
