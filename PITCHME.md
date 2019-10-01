@@ -9,9 +9,11 @@ Un langage moderne (v1 en 2011).
 
 Développé par Google
 
+Couvre du back au front
+
 Possibilité de transcompiler en Javascript (dart2js)
 
-+++
+---
 
 ## Backend
 
@@ -55,6 +57,8 @@ GraphQL un de langage de requetage d'API
  - 50 bières 
  - 100 tentavtives de déploiement sur Google App Engine
 
++++
+
 ## Enseignement 
 
 - Attention au framework jeune 
@@ -71,7 +75,7 @@ Flutter
 
 +++
 
-## En 1 mot
+## En **Un** Mot
 
 ##### Fuchsia 
 ###### (ok pas que mais ça fait hype du futur)
@@ -80,7 +84,7 @@ Flutter
 
 ## Et sinon c'est quoi ?
 
-Framework créé par Google.
+Framework créé par Google
 
 Open source
 
